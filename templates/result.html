@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Augmentation Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='result.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Augmentation Result (sample)</h1>
+        <div class="result-image">
+            <img src="{{ url_for('static', filename='Augmented-images/Aug_0.jpg') }}" alt="Augmented Image">
+        </div>
+        <p class="message">Images augmented successfully!</p>
+        <p class="image-count">Total augmented images You have: {{ image_count }}</p>
+    </div>
+</body>
+</html>
